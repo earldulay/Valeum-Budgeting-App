@@ -1,0 +1,42 @@
+# Node
+
+node_modules/
+
+# Expo
+
+.expo/
+.expo-shared/
+
+# Build
+
+dist/
+build/
+
+# Environment
+
+.env
+
+# Android
+
+android/.gradle/
+android/app/build/
+
+# iOS
+
+ios/build/
+
+# Logs
+
+*.log
+
+# Uploads
+
+backend/uploads/
+
+# VSCode
+
+.vscode/
+
+# Mac
+
+.DS_Store
