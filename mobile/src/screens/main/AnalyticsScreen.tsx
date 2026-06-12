@@ -1,21 +1,3 @@
-export interface AnalyticsSummary{
-
-income:number;
-
-expenses:number;
-
-savings:number;
-
-score:number;
-
-categories:{
-name:string;
-amount:number;
-percentage:number;
-}[];
-
-}
-
 import React,
 {
 useState
