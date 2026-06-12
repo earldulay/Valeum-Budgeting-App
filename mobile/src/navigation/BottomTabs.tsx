@@ -19,6 +19,15 @@ from
 import AnalyticsScreen
 from '../screens/main/AnalyticsScreen';
 
+import AdvisorScreen
+from '../screens/main/AdvisorScreen';
+
+import AddReceiptScreen
+from '../screens/main/AddReceiptScreen';
+
+import SettingsScreen
+from '../screens/main/SettingsScreen';
+
 const Tab =
 createBottomTabNavigator();
 
@@ -78,6 +87,64 @@ color={color}
 
 />
 
+<Tab.Screen
+
+name="Advisor"
+
+component={AdvisorScreen}
+
+options={{
+tabBarIcon:({
+color,
+size
+})=>(
+<Ionicons
+name="chatbubble"
+size={size}
+color={color}
+/>
+)
+}}
+
+/>
+
+<Tab.Screen
+name="Add"
+component={AddReceiptScreen}
+options={{
+tabBarIcon:({
+color,
+size
+})=>(
+<Ionicons
+name="camera"
+size={size}
+color={color}
+/>
+)
+}}
+/>
+
+<Tab.Screen
+
+name="Settings"
+
+component={SettingsScreen}
+
+options={{
+tabBarIcon:({
+color,
+size
+})=>(
+<Ionicons
+name="settings"
+size={size}
+color={color}
+/>
+)
+}}
+
+/>
 </Tab.Navigator>
 
 )

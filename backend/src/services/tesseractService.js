@@ -1,15 +1,28 @@
 const Tesseract =
-require('tesseract.js');
+require(
+'tesseract.js'
+);
 
-async function scanReceipt(path){
+async function scanOCR(
+path
+){
 
 const result =
-await Tesseract.recognize(path,'eng');
 
-return result.data.text;
+await Tesseract.recognize(
+
+path,
+
+'eng'
+
+);
+
+return result
+.data
+.text;
 
 }
 
-module.exports = {
-scanReceipt
+module.exports={
+scanOCR
 };
